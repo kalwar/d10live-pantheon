@@ -5,7 +5,7 @@ on:
       - main
 env:
   PANTHEON_SITE: d10live
-  PANTHEON_SITE_ID: 9922391c-3252-4067-95df-665ab4557a2c
+  PANTHEON_SITE_ID: c6315227-dd67-48e2-9ee4-6c42f1bc4201
   PANTHEON_ENV: dev
 
   # note: PATHEON_SITE_ID assumes that your Pantheon Git URL is in the format
