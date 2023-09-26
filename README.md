@@ -8,7 +8,7 @@ A very simple skeleton of Drupal 10 together with pantheon site powering your li
 - [Making site changes](#changes)
 - [Deployment to Pantheon via Github actions](#deployment)
 
-## Local site setup with DDEV <a name="setup"></a>
+## Local site setup <a name="setup"></a>
 
 Do the lando setup, make sure you can clone the repo from pantheon site and run locally drupal 10 with lando
 
