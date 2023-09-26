@@ -1,24 +1,38 @@
-# Composer-enabled Drupal template
+# d10live-pantheon
 
-# Read this
+A very simple skeleton of Drupal 10 together with pantheon site powering your live site, a website about whatever you want it to be.
 
-This is Pantheon's recommended starting point for forking new [Drupal](https://www.drupal.org/) upstreams
-that work with the Platform's Integrated Composer build process. It is also the
-Platform's standard Drupal 9 upstream.
+- [Local setup](#setup)
+- [Making site changes](#changes)
+- [Deployment to Pantheon via Github actions](#deployment)
 
-Unlike with earlier Pantheon upstreams, files such as Drupal Core that you are
-unlikely to adjust while building sites are not in the main branch of the
-repository. Instead, they are referenced as dependencies that are installed by
-Composer.
+## Local site setup with DDEV <a name="setup"></a>
 
-For more information and detailed installation guides, please visit the
-Integrated Composer Pantheon documentation: https://pantheon.io/docs/integrated-composer
+Do the lando setup, make sure you can clone the repo from pantheon site and run locally drupal 10 with lando
 
-## Contributing
+## Making site changes <a name="changes"></a>
 
-Contributions are welcome in the form of GitHub pull requests. However, the
-`pantheon-upstreams/drupal-composer-managed` repository is a mirror that does not
-directly accept pull requests.
+### Configuration changes
 
-Instead, to propose a change, please fork [pantheon-systems/drupal-composer-managed](https://github.com/pantheon-systems/drupal-composer-managed)
-and submit a PR to that repository.
+Drupal 10 configuration (such as content type and field definitions) is managed through yml files. These files live in the `config` directory.
+
+After you make configuration changes locally (such as adding a field to a content type), you can then export those changes by running `lando drush cex` in the project directory.
+
+Import site database, clear caches, and apply site configuration from code.
+
+1. `lando db-export`
+2. You will get database.sql.gz file in root of your project folder
+3. Copy database dump generated e.g. `database.sql.gz` dump to pantheon site Database/Files under "Import" section
+4. Make sure you have File option selected
+5. Your lando drupal local site configurations must match with pantheon site
+
+## Deployment to Pantheon via Github Actions <a name="deployment"></a>
+
+This site's main branch is automatically committed and deployed to Pantheon's dev environment with a [Github action workflow file](.github/workflows/deploy_to_pantheon.yml). The pantheon site name and ID are configured in that file.
+
+It needs these secrets added to this repository's Github settings:
+
+- **PANTHEON_SSH_PRIVATE_KEY**
+  <br>(A Private SSH key paired to a [Public SSH key added to Pantheon](https://docs.pantheon.io/ssh-keys))
+- **TERMINUS_TOKEN**
+  <br>(A generated [Pantheon Machine token](https://docs.pantheon.io/machine-tokens))
