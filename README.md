@@ -1,5 +1,7 @@
 # d10live-pantheon
 
+[![Deployment to Pantheon](https://github.com/kalwar/d10live-pantheon/actions/workflows/deploy_to_pantheon.yml/badge.svg)](https://github.com/kalwar/d10live-pantheon/actions/workflows/deploy_to_pantheon.yml)
+
 A very simple skeleton of Drupal 10 together with pantheon site powering your live site, a website about whatever you want it to be.
 
 - [Local setup](#setup)
