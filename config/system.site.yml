@@ -2,7 +2,7 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: 8feb7e25-84fa-4559-986c-8e1dfea08a04
-name: 'Drupal Pantheon Site - Update from github'
+name: 'Drupal Pantheon Site'
 mail: kalsa@bc.fi
 slogan: ''
 page:
