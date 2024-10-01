@@ -38,3 +38,5 @@ It needs these secrets added to this repository's Github settings:
   <br>(A Private SSH key paired to a [Public SSH key added to Pantheon](https://docs.pantheon.io/ssh-keys))
 - **TERMINUS_TOKEN**
   <br>(A generated [Pantheon Machine token](https://docs.pantheon.io/machine-tokens))
+
+# New changes for REACT24K
