@@ -39,4 +39,4 @@ It needs these secrets added to this repository's Github settings:
 - **TERMINUS_TOKEN**
   <br>(A generated [Pantheon Machine token](https://docs.pantheon.io/machine-tokens))
 
-# New changes for REACT24K
+# REACT24K
