@@ -40,3 +40,5 @@ It needs these secrets added to this repository's Github settings:
   <br>(A generated [Pantheon Machine token](https://docs.pantheon.io/machine-tokens))
 
 # REACT24K
+
+Testing github ci/cd
