@@ -39,6 +39,6 @@ It needs these secrets added to this repository's Github settings:
 - **TERMINUS_TOKEN**
   <br>(A generated [Pantheon Machine token](https://docs.pantheon.io/machine-tokens))
 
-# REACT24K
+# REACT25K
 
 Testing github ci/cd
